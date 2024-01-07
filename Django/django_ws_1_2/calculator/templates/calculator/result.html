@@ -1,0 +1,28 @@
+{% extends "calculator/base.html" %}
+{% load mathfilters %} 
+{% block content %}
+    <ul>
+        <br><br>
+        <h1>계산 결과</h1>
+        <br><br>
+        <p>calculator으로 부터 {{message}} & {{message2}}를 받았다!</p>
+        <br>
+    </ul>
+    <ul>
+        <ul>
+            <p>{{message}} + {{message2}} =  {{message|add:message2}} </p>
+            <p>{{message}} * {{message2}} =  {{message|mul:message2}} </p>  
+            <p>{{message}} - {{message2}} =  {{message|sub:message2}} </p>
+            <p>
+                {% if message2 == '0' %}
+                    계산할 수 없습니다.
+                {% elif message2 != 0 %}
+                    {{message}} / {{message2}} = {{message|div:message2}}
+                {% endif %}
+            </p>
+        </ul>
+    </ul>
+        
+    
+{% endblock content %}
+

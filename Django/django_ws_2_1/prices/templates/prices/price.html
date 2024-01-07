@@ -1,0 +1,18 @@
+{% extends "prices/base.html" %}
+
+{% block content %}
+<br>
+<br>
+<ul>
+    <ul>
+        <ul>
+            {% if name in items %}
+                <h3><strong>{{name}}의 {{num}}개 가격은 {{price}}입니다.</strong></h3>
+            {% else %}
+                <h3><strong>{{name}}은/는 없어용</strong></h3>
+            {% endif %}
+            {% endblock content %}
+        </ul>
+    </ul>
+</ul>
+

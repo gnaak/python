@@ -1,0 +1,18 @@
+{% extends "throw_loops/base.html" %}
+
+
+{% block content %}
+<p>
+    {% if message3 %}
+        catch! I catch {{message3}}!</p>
+    {% else %}
+        catch! I catch nothing
+        {% endif %}
+</p>
+
+<form action="/second/" method = "">
+    <label for="message1">throw!</label>
+    <input type="text" name = "message1" id ="message1">        
+    <input type="submit" value = "휙">
+</form>
+{% endblock content %}

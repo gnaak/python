@@ -1,0 +1,12 @@
+{% extends "menus/base.html" %}
+
+{% block content %}
+<p>
+    {% if message in food or message in drink%}
+        {{message}} 주문받았습니다.
+    {% else %}
+        {{message}}은/는 주문이 불가능합니다.
+    {% endif %}
+</p>
+
+{% endblock content %}

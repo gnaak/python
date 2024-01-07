@@ -1,0 +1,15 @@
+{% extends "calculator/base.html" %}
+
+
+{% block content %}
+    <h1>연산할 두 숫자를 입력하세요</h1>
+    <br><br><br>
+    <form action="/result/">
+        <label for="message">첫번째 숫자 :</label>
+        <input type="text" name = "message" id ="message">        
+        <label for="message2">두번째 숫자 :</label>
+        <input type="text" name = "message2" id ="message2">        
+        <input type="submit">
+    </form>
+
+{% endblock content %}

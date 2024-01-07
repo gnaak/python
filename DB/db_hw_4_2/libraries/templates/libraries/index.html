@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  {% if request.user.is_authenticated %}
+    <p>{{ user.username }}님 안녕하세요!</p>
+    <form action="{% url "accounts:logout" %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="LOGOUT">
+    </form>
+  {% else %}
+    <a href="{% url "accounts:login" %}">LOGIN</a>
+    <a href="{% url "accounts:signup" %}">SIGNUP</a>
+  {% endif %}
+  <hr>
+  <a href="{% url 'libraries:create' %}">CREATE</a>
+
+  <h1>책 전체 목록 </h1>
+  <br><br>
+  {% for book in books %}
+  <ul>
+    <li>
+      <a href="{% url "libraries:detail" book.pk %}">제목 : {{ book.title }}</a>
+    </li>
+    <br>
+    <hr>
+    
+  </ul>
+  {% endfor %}
+  
+</body>
+</html>

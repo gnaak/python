@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>메인 페이지 입니다</h1>
+    <br><br>
+    {% for garage in garages  %}
+        location = {{garage.location}},
+        capctity = {{garage.capacity}},
+        is_parking_available = {{garage.is_parking_available}},
+        opening_time = {{garage.opening_time}}
+        closing_time = {{garage.closing_time}}
+        <hr>
+    {% endfor %}
+</body>
+</html>

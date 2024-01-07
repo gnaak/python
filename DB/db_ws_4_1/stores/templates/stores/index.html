@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  {% if request.user.is_authenticated %}
+    <p>{{ user.username }}님 안녕하세요!</p>
+    <form action="{% url "accounts:logout" %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="LOGOUT">
+    </form>
+  {% else %}
+    <a href="{% url "accounts:login" %}">LOGIN</a>
+    <a href="{% url "accounts:signup" %}">SIGNUP</a>
+  {% endif %}
+  <hr>
+  <a href="{% url 'stores:create' %}">CREATE</a>
+
+  <h1>전체 편의점 목록 </h1>
+  <br><br>
+  {% for store in stores %}
+  <ul>
+    <li>
+      <a href="{% url "stores:detail" store.pk %}">점장 : {{ store.user.username }}</a>
+    </li>
+    <br>
+     <li>
+       <a href="{% url "stores:detail" store.pk %}">주소 : {{ store.address }}</a>
+      </li> 
+      <br>
+     <hr>
+  </ul>
+  {% endfor %}
+  
+</body>
+</html>

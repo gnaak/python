@@ -1,0 +1,30 @@
+[
+{
+    "model": "articles.article",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "title": "고고고",
+        "content": "고고고",
+        "created_at": "2023-10-17T00:17:24.875Z",
+        "updated_at": "2023-10-17T00:17:24.875Z",
+        "like_users": [
+            1
+        ]
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "title": "고고",
+        "content": "고고",
+        "created_at": "2023-10-17T00:17:34.243Z",
+        "updated_at": "2023-10-17T00:17:34.243Z",
+        "like_users": [
+            1
+        ]
+    }
+}
+]

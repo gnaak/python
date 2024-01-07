@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><br>
+    <ul>
+        <ul>
+            <ul><strong>
+                <h2>
+                    {% for article in articles %}
+                    {{article.created_at.month}}/{{article.created_at.day}}에 생성된
+                    {{article.pk}}번글 - {{article.title}} : {{article.content}}
+                </h2>
+            </ul></strong>
+        </ul>
+    </ul>
+    <hr>
+    {% endfor %}
+</body>
+</html>

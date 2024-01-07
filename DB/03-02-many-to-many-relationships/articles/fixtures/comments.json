@@ -1,0 +1,90 @@
+[
+{
+    "model": "articles.comment",
+    "pk": 1,
+    "fields": {
+        "article": 2,
+        "user": 1,
+        "content": "고",
+        "created_at": "2023-10-17T00:17:38.477Z",
+        "updated_at": "2023-10-17T00:17:38.477Z"
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 2,
+    "fields": {
+        "article": 2,
+        "user": 1,
+        "content": "고",
+        "created_at": "2023-10-17T00:17:41.204Z",
+        "updated_at": "2023-10-17T00:17:41.204Z"
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 3,
+    "fields": {
+        "article": 1,
+        "user": 1,
+        "content": "댓글 고고!",
+        "created_at": "2023-10-17T00:17:46.926Z",
+        "updated_at": "2023-10-17T00:17:46.926Z"
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 4,
+    "fields": {
+        "article": 1,
+        "user": 1,
+        "content": "댓글 고고!",
+        "created_at": "2023-10-17T00:17:48.389Z",
+        "updated_at": "2023-10-17T00:17:48.389Z"
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 5,
+    "fields": {
+        "article": 1,
+        "user": 1,
+        "content": "asdasd",
+        "created_at": "2023-10-17T00:17:52.648Z",
+        "updated_at": "2023-10-17T00:17:52.648Z"
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 6,
+    "fields": {
+        "article": 1,
+        "user": 1,
+        "content": "댓글 고고!",
+        "created_at": "2023-10-17T00:17:54.486Z",
+        "updated_at": "2023-10-17T00:17:54.486Z"
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 7,
+    "fields": {
+        "article": 1,
+        "user": 2,
+        "content": "댓글 고고?",
+        "created_at": "2023-10-17T00:28:42.613Z",
+        "updated_at": "2023-10-17T00:28:42.613Z"
+    }
+},
+{
+    "model": "articles.comment",
+    "pk": 8,
+    "fields": {
+        "article": 1,
+        "user": 2,
+        "content": "댓글 고고!",
+        "created_at": "2023-10-17T00:28:45.678Z",
+        "updated_at": "2023-10-17T00:28:45.678Z"
+    }
+}
+]
